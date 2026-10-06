@@ -1,4 +1,4 @@
-"""SecureCare Claims Assistant: Streamlit entry point.
+"""SecureCare Claims Agent: Streamlit entry point.
 
 Run locally:   streamlit run app.py
 Deploy:        Streamlit Community Cloud -> main file path: app.py
@@ -31,7 +31,7 @@ flash = st.session_state.pop("flash", None)
 if flash:
     getattr(st, flash["kind"])(flash["text"])
 
-tab_claim, tab_graph, tab_about = st.tabs(["📝 New Claim", "🧭 Workflow graph", "ℹ️ About & demo data"])
+tab_claim, tab_graph, tab_about = st.tabs(["📝 Fresh Claim", "🧭 Workflow graph", "ℹ️ About & demo data"])
 
 with tab_claim:
     t1, t2, t3, _ = st.columns([1.1, 1.3, 1, 3])
